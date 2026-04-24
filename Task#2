@@ -1,0 +1,52 @@
+GET /api/v2/partner-stores
+Host: https://api.petrushka-green.ru
+Authorization: Token <токен_пользователя>
+
+{
+  "stores": [
+    {
+      "id": "store-01",
+      "name": "METRO",
+      "logo_url": "https://petrushka-green.ru/metro-logo.png",
+      "external_url": "https://metro-cc.ru",
+      "delivery_info": {
+        "type": "scheduled", //плановая доставка
+        "text": "Ближайшая доставка",
+        "time_range": "сегодня 21:00-23:00"
+      }
+    },
+    {
+      "id": "store-02",
+      "name": "Ашан",
+      "logo_url": "https://petrushka-green.ru/ashan-logo.png",
+      "external_url": "https://auchan.ru",
+      "delivery_info": {
+        "type": "scheduled",
+        "text": "Ближайшая доставка",
+        "time_range": "сегодня 18:00-20:00"
+      }
+    },
+    {
+      "id": "store-03",
+      "name": "ВкусВилл",
+      "logo_url": "https://petrushka-green.ru/vv-logo.png",
+      "external_url": "https://vkusvill.ru",
+      "delivery_info": {
+        "type": "express", //экспресс-доставка
+        "text": "Быстрая доставка",
+        "time_range": "от 20 до 60 минут"
+      }
+    },
+    {
+      "id": "store-04",
+      "name": "ВИКТОРИЯ",
+      "logo_url": "https://petrushka-green.ru/victoria-logo.png"",
+      "external_url": "https://victoria-group.ru",
+      "delivery_info": {
+        "type": "scheduled",
+        "text": "Ближайшая доставка",
+        "time_range": "сегодня 17:00-19:00"
+      }
+    }
+  ]
+}
